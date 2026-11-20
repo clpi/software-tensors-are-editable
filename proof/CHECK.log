@@ -1,0 +1,17 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+'Tensor.applyEd_untouched' does not depend on any axioms
+'Tensor.applyEd_empty' depends on axioms: [Quot.sound]
+'Tensor.look_append' depends on axioms: [propext]
+'Tensor.applyEd_append' depends on axioms: [propext, Quot.sound]
+'Tensor.look_invOf' depends on axioms: [propext]
+'Tensor.reversal_exact' depends on axioms: [propext, Quot.sound]
+'Tensor.look_some_mem' depends on axioms: [propext]
+'Tensor.adm_protects' depends on axioms: [propext]
+'Tensor.adm_append' depends on axioms: [propext]
+'Tensor.tie_control' depends on axioms: [propext]
+'Tensor.chg_control' depends on axioms: [propext]
+'Tensor.view_obscure_free' depends on axioms: [propext, Quot.sound]
+'Tensor.view_agree' depends on axioms: [propext, Quot.sound]
+'Tensor.view_det' depends on axioms: [propext, Quot.sound]
+Axiom subset check passed: printed axioms are a subset of {propext, Classical.choice, Quot.sound}
+Axioms printed: Quot.sound propext 
