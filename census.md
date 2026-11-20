@@ -64,13 +64,17 @@ unknown. Nothing sits higher than its evidence.
   output column flipped together preserving scoped attention
   behavior in exact arithmetic, unpaired edits and stale
   caches as controls): its Qwen fixtures are not on this
-  machine. Verified by exhaustive search 2026-11-20: no Qwen
-  checkpoint, no Pythia material, and no deterministic-llms
-  repository exists on disk. One search pass reported a Qwen
+  machine. Verified by exhaustive search 2026-11-20: no
+  Pythia material and no deterministic-llms repository
+  exists on disk, and the sign-flip experiment's own
+  checkpoint is absent — a different Qwen checkpoint is
+  present (the Ollama entry below) and is not that
+  experiment's fixture. One search pass reported a Qwen3
   GGUF file at a workspace path; no direct read ever
   confirmed it and a name-exact re-sweep of every plausible
-  root found nothing, so it is recorded as not present, with
-  the discrepancy named in the program record.
+  root found nothing, so that file is recorded as not
+  present, with the discrepancy named in the program
+  record.
 - The Pythia causal mask reconstruction and the 72-run
   fixture benchmark receipt: same access blocker — the
   fixtures and the receipt are not on this machine.
@@ -89,6 +93,19 @@ unknown. Nothing sits higher than its evidence.
 - The decompiled semantic form of that matrix: 1,638,402
   bytes, SHA-256
   6e8d080b8907b6450755e9e0e1442ce6501aa6e9c5ff3b56d5a359f17f1d32c7.
+- A Qwen2.5 1.5B Instruct checkpoint in a local Ollama
+  store (~/workspace/tools/ollama-vm/models): the model
+  layer is a GGUF version 3 file, 986,048,512 bytes, 338
+  tensors, SHA-256
+  183715c435899236895da3869489cc30ac241476b4971a20285b1a462818a5b4
+  (computed in full; it matches the blob's content-addressed
+  name). Correction, 2026-11-20: the founding census missed
+  this store — its blobs carry no file extension, so the
+  extension-based search could not see them — and wrongly
+  recorded that no Ollama store exists on disk. The
+  completed full sweep found it. No blocked item above
+  depends on this checkpoint: it is not any blocked
+  experiment's fixture.
 
 ## Unknown
 
